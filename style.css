@@ -1,0 +1,205 @@
+*{
+    font-family: 'Montserrat', sans-serif; 
+}
+
+/* ------------ Configuración Etiquetas ------------ */
+body{
+    margin: 0px;
+    background-color: rgb(66,126,128);
+    color: rgb(240,245,228);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 40px;
+}
+
+main{
+    padding: 100px 20px;
+}
+
+p{
+    color: black;
+}
+
+h1{
+    background-color: rgb(45,45,45);
+    text-shadow: 4px 4px black;
+}
+
+h2{
+    text-shadow: 2px 2px rgb(21,68,84);
+    font-size:40px ; 
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(31, 30, 30);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+header{
+    background: url(./assets/imagenes/codigo.jpeg);
+    background-size: cover;
+    min-height: 500px;
+    color: rgb(238,238,238);
+    font-size: 28px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+/* ------------ Clases Multi Paginas ------------ */
+.textPos{
+    text-align: center;
+}
+
+/* ------------ Configuracion Navegador ------------ */
+.menu-nav{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+
+.conf-menu{
+    list-style-type: none;
+}
+
+.link, .botonVideo{
+    box-shadow: 2px 3px rgb(21,68,84);
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(240,245,228);
+    color:rgb(21,68,84) ;
+    font-weight: 300;
+}
+
+/* ------------ Configuracion Pag Index ------------ */
+.main-tarjeta{
+    margin: 100px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.tarjeta{
+    width: 350px;
+    height: 400px;
+    border: 5px solid rgb(21,68,84);
+    background-color: rgb(240,245,228);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-tarjeta{
+    width: 90%;
+    text-align: center;
+    height: 30px;
+}
+
+.img-tarjeta{
+    width: 100%;
+}
+
+.boton-ver{
+    padding: 10px ;
+    border-radius: 10px;
+    color:rgb(240,245,228);
+    background-color: rgb(66,126,128);
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 3px rgb(21,68,84);
+    text-align: center;
+    text-decoration: none;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.boton-ver:active{
+    box-shadow: 1px 1px gray;
+    transform: translate(3px, 2px);
+}
+
+/* ------------ Configuración Foot ------------ */
+.footer-conf{
+    display: flex;
+    justify-content: space-between;
+    width:300px;
+    height: 60px;
+}
+
+.titulo-foot{
+    font-size: 14px;
+}
+
+/* ------------ Configuracion Pag Historia ------------ */
+.main-historia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-hist{
+    display: flex;
+    align-items: center;
+    padding:80px 50px;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.sizeText{
+    width: 45%;
+}
+
+/* ------------ video ------------ */
+.contenedorVideo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.barra{
+    background-color: rgb(31, 30, 30);
+    border-radius: 10px;
+    padding: 2px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.botonera{
+    display: flex;
+    gap: 20px;
+}
+.container{
+    padding: 5px;
+    background-color: black;
+    width: 70%;
+}
+
+#play,#pause{
+   width: 80px;
+}
+
+.botonVideo:active{
+    box-shadow: 1px 1px darkgray;
+    transform: translate(3px, 2px);
+}
+
+#tiempo{
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
