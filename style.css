@@ -17,7 +17,7 @@ nav{
 }
 
 main{
-    padding: 100px 20px;
+    padding: 100px 0px;
 }
 
 p{
@@ -36,23 +36,23 @@ h2{
 }
 
 footer{
+    display: flex;
+    align-items: center;
     background-color: rgb(31, 30, 30);
     height: 80px;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 0px 40px;
 }
 
 header{
-    background: url(./assets/imagenes/codigo.jpeg);
+    display: flex;
+    align-items: center;
+    background: url(./assets/imagenes/codigo.jpeg) 20% 0 fixed ;
     background-size: cover;
     min-height: 500px;
     color: rgb(238,238,238);
     font-size: 28px;
-    display: flex;
     justify-content: space-around;
-    align-items: center;
     padding: 0px 100px;
 }
 
@@ -60,6 +60,57 @@ header{
 .textPos{
     text-align: center;
 }
+
+.boxyAxis{
+    display: flex;
+    align-items: center;
+}
+
+/* ------------ Configuracion Logo ------------ */
+rect#rec1, polygon#pol1{
+    animation: animation_1 ease-in 4s;
+    animation-iteration-count:1;
+    fill: rgb(63, 103, 151);
+}
+    
+rect#rec2, polygon#pol2 {
+    animation: animation_2 ease-in 4s;
+    animation-iteration-count:1;
+    fill: rgb(177, 213, 228);
+}
+
+@keyframes animation_1{
+    0% {
+        transform: translate(0,-10px);
+        opacity:0;}
+    15% {
+        transform: translate(0,-10px);
+        opacity:0;}
+    30% {
+        transform: translate(0,0);
+        opacity:1;}
+    80% {
+        transform: translate(0,0);
+        opacity:1;}
+    100% {
+        transform: translate(0,0);
+        opacity:1;}
+}   
+
+@keyframes animation_2 {
+    0% {
+        transform: translate(0,-10px);
+        opacity:0;}
+    30% {
+        transform: translate(0,-10px);
+        opacity:0;}
+    60% {
+        transform: translate(0,0);
+        opacity:1;}
+    100% {
+        transform:translate(0,0);
+        opacity:1;}
+}  
 
 /* ------------ Configuracion Navegador ------------ */
 .menu-nav{
@@ -82,6 +133,14 @@ header{
     font-weight: 300;
 }
 
+.conf-menu:active{
+    transform: translate(3px, 2px);
+}
+
+.link:active{
+    box-shadow: 2px 2px darkgrey;
+}
+
 /* ------------ Configuracion Pag Index ------------ */
 .main-tarjeta{
     margin: 100px 0px;
@@ -92,19 +151,16 @@ header{
 }
 
 .tarjeta{
+    flex-direction: column;
     width: 350px;
     height: 400px;
     border: 5px solid rgb(21,68,84);
     background-color: rgb(240,245,228);
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
 }
 
 .text-tarjeta{
     width: 90%;
-    text-align: center;
     height: 30px;
 }
 
@@ -119,7 +175,6 @@ header{
     background-color: rgb(66,126,128);
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 2px 3px rgb(21,68,84);
-    text-align: center;
     text-decoration: none;
     width: 40%;
     margin-bottom: 20px;
@@ -143,16 +198,12 @@ header{
 }
 
 /* ------------ Configuracion Pag Historia ------------ */
-.main-historia{
-    display: flex;
+.main-hist{
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
-.text-hist{
-    display: flex;
-    align-items: center;
+.text-hist{    
     padding:80px 50px;
     gap: 20px;
     justify-content: space-around;
@@ -164,20 +215,16 @@ header{
 
 /* ------------ video ------------ */
 .contenedorVideo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 100px 0px;
 }
 
 .barra{
-    background-color: rgb(31, 30, 30);
-    border-radius: 10px;
-    padding: 2px 5px;
     display: flex;
     justify-content: space-between;
     align-items: end;
+    background-color: rgb(31, 30, 30);
+    border-radius: 10px;
+    padding: 2px 5px;
 }
 
 .botonera{
@@ -186,8 +233,8 @@ header{
 }
 .container{
     padding: 5px;
-    background-color: black;
     width: 70%;
+    background-color: black;
 }
 
 #play,#pause{
@@ -202,4 +249,39 @@ header{
 #tiempo{
     padding-right: 10px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ------------ Configuracion Pag Juego ------------ */
+.juego{
+    flex-direction: column;
+}
+
+.puzzle{
+    display: flex;
+    flex-direction: row;
+}
+
+#puzzle1,#puzzle2,#puzzle3{
+    display: inline-block;
+    text-align: center;
+    height: 400px;
+    width: 275px;
+    background-color: grey;
+    border: 2px solid black;
+}
+
+#puzzleimagenes{
+    gap: 10px;
+    margin: 40px;
+}
+
+#img1,#img2,#img3{
+    width: 275px;
+    height: 400px;
+}
+
+.reinicio{
+    display: flex;
+    margin: auto;
+    padding: 10px 100px;
 }

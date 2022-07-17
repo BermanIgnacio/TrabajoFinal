@@ -6,13 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="./assets/imagenes/logo.svg">
         <link rel="stylesheet" href="./style.css">
-        <title>JUEGOS</title>
+        <title>Juegos</title>
     </head>
     <body>
         <nav>
             <a href="./index.html">
-                <!-- Logo  -->
-                <button class="botonVideo">index</button> <!-- temporal  -->
+                <svg width="200" height="80">
+                    <rect id="rec1" x="45" y="5" width="60" height="35" rx="5"></rect>
+                    <rect id="rec2" x="50" y="10" width="50" height="25" rx="5"></rect>
+                    <polygon id="pol1" points="55 45 ,95 45,115 64,30 64"></polygon>
+                    <polygon id="pol2" points="57 48 ,92 48,104 60,43 60"></polygon>
+                </svg>
             </a>
             <ul class="menu-nav">
                 <li class="conf-menu"><a class="link" href="./historia.html">HISTORIA</a></li>
@@ -22,8 +26,25 @@
         <header><h1 class="textPos">JUGUEMOS UN POCO</h1></header>
         <main>
             <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
-            <!-- Juego  -->
-            <button class="botonVideo">Reiniciar</button>
+            <section class="boxyAxis juego">
+                <div class="puzzle">
+                    <div id="puzzle1">
+                        <p>Arrastre y suelte la imágene aquí</p>
+                    </div>
+                    <div id="puzzle2">
+                        <p>Arrastre y suelte la imágene aquí</p>
+                    </div>
+                    <div id="puzzle3">
+                        <p>Arrastre y suelte la imágene aquí</p>
+                    </div>
+                </div>
+                <div class="puzzle" id="puzzleimagenes">
+                    <img id="img1" src="./assets/imagenes/Rompe2.png">
+                    <img id="img2" src="./assets/imagenes/Rompe1.png">
+                    <img id="img3" src="./assets/imagenes/Rompe3.png">
+                </div>
+            </section>
+            <button class="botonVideo reinicio">Reiniciar</button>
         </main>
         <!-- <script src="./scriptJ.js"></script>  -->
     </body>

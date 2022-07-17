@@ -6,22 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/imagenes/logo.svg">
     <link rel="stylesheet" href="./style.css">
-    <title>HISTORIA</title>
+    <title>Historia</title>
 </head>
     <body>
         <nav>
             <a href="./index.html">
-                <!-- Logo  -->
-                <button class="botonVideo">index</button><!-- temporal  -->
+                <svg width="200" height="80">
+                    <rect id="rec1" x="45" y="5" width="60" height="35" rx="5"></rect>
+                    <rect id="rec2" x="50" y="10" width="50" height="25" rx="5"></rect>
+                    <polygon id="pol1" points="55 45 ,95 45,115 64,30 64"></polygon>
+                    <polygon id="pol2" points="57 48 ,92 48,104 60,43 60"></polygon>
+                </svg>
             </a>
             <ul class="menu-nav">
                 <li class="conf-menu" ><a class="link" href="./historia.html">HISTORIA</a></li>
                 <li class="conf-menu"><a class="link" href="./juegos.html">JUGUEMOS</a></li>
             </ul>
         </nav>
-        <header> <h1 class="textPos"> HISTORIA DE LA PROGRAMACION</h1> </header>
-        <main class="main-historia">
-            <div class="text-hist">
+        <header> 
+            <h1 class="textPos"> HISTORIA DE LA PROGRAMACION</h1> 
+        </header>
+        <main class="boxyAxis main-hist">
+            <div class="boxyAxis text-hist">
                 <h2>El principio de la historia de la programación</h2>
                 <p class="sizeText">El primer lenguaje de programación fue un algoritmo creado por Ada Lovelace en 1883.
                     Ada Lovelace creó este algoritmo para el motor analítico de Charles Babbage.
@@ -30,7 +36,7 @@
                     Church expresó el cálculo lambda de forma formulativa.
                 </p>
             </div>
-            <div class="text-hist">
+            <div class="boxyAxis text-hist">
                 <p class="sizeText">Los primeros ordenadores modernos (alimentados eléctricamente) fueron creados en los años 40.
                     Estas computadoras estaban limitadas en velocidad y capacidad de memoria.<br>
                     Debido a estas limitaciones, los programadores se vieron obligados a escribir manualmente programas en lenguaje ensamblador.
@@ -39,7 +45,7 @@
                 </p>
                 <h2>Lenguaje de ensamblaje</h2>
             </div>
-            <div class="text-hist">
+            <div class="boxyAxis text-hist">
                 <h2>Los primeros lenguajes de programación</h2>
                 <div>
                     <p>FORmulaTRANslation es el lenguaje de programación más antiguo y que continúa en uso. Creada por John Backus en 1957, esta herramienta fue desarrollada para la computación científica de alto nivel, matemáticas y estadísticas.
@@ -49,14 +55,14 @@
                         El desarrollo de Cobol, creado por Grace Murray Hopper, muestra un lenguaje famipar y uniforme para transacciones empresariales. Por ejemplo, lo usan en el servicio postal estadounidense
                     </p>
                     <p>En 1964 se creo Basic, que fue diseñado como un lenguaje simppficado para aquellos que no tenían como base fuertes conocimientos técnicos o matemáticos. </p>
-                    <p>Entre 1969 y 1973 se crea <strong>C</strong>,a manos de Dennis Ritchie para los laboratorios Bell Telephone para usarlos en el sistema Unix. Se le llamó «C» porque sus características derivaban de un lenguaje anterior llamado «B».</p>
+                    <p>Entre 1969 y 1973 se crea <b>C</b>,a manos de Dennis Ritchie para los laboratorios Bell Telephone para usarlos en el sistema Unix. Se le llamó «C» porque sus características derivaban de un lenguaje anterior llamado «B».</p>
                     <p>En los laboratorios Bells, Bjarne Stroustrup modificó el lenguaje C al C++, creando lo que muchos consideran el lenguaje de programación más popular que ha existido nunca. Además, ha sido listado en lo alto de los top ten de los lenguajes de programación desde 1986 y archivado en el Hall of Fame en 2003. Hoy en día es usado por Firefox, Office y Adobe PDF Reader<br> 
                         Esto dio el puntapie a que se sigan perfeccionando los lenguajes hasta llegar al os lenguajes de hoy en dia
                     </p>
                 </div>
             </div>   
         </main>
-        <article class="contenedorVideo">
+        <article class="boxyAxis main-hist contenedorVideo">
             <h2>Un breve video para complementar lo visto</h2>
             <section class="container">
                     <video src="./assets/video/historia-Comp.mp4" poster="./assets/imagenes/img-video.jpg" width="100%">

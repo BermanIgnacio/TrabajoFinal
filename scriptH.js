@@ -6,7 +6,6 @@ video.onloadedmetadata = function() {
 };
 
 let botones = document.querySelectorAll("button");
-let srcs = document.querySelector("source");
 
 botones[0].addEventListener("click",()=>{
     video.play();
