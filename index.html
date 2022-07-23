@@ -11,12 +11,7 @@
     <body>
         <nav>
             <a href="./index.html">
-                <svg width="200" height="80">
-                    <rect id="rec1" x="45" y="5" width="60" height="35" rx="5"></rect>
-                    <rect id="rec2" x="50" y="10" width="50" height="25" rx="5"></rect>
-                    <polygon id="pol1" points="55 45 ,95 45,115 64,30 64"></polygon>
-                    <polygon id="pol2" points="57 48 ,92 48,104 60,43 60"></polygon>
-                </svg>
+                <canvas id="lienzo" width="150" height="80">El navegador utilizado no soporta el elementos canvas</canvas>
             </a>
             <ul class="menu-nav">
                 <li class="conf-menu"><a class="link" href="./historia.html">HISTORIA</a></li>
@@ -41,15 +36,17 @@
         </main>
         <footer>
             <div class="footer-conf">
-                <svg width="200" height="80">
-                    <rect x="45" y="5" width="60" height="35" rx="5" id="mon1" fill="#3F6797"></rect>
-                    <rect x="50" y="10" width="50" height="25" rx="5" id="mon2" fill="#B1D5E4"></rect>
-                    <polygon points="55 45 ,95 45,115 62,30 62" fill="#3F6797" id="tec1"></polygon>
-                    <polygon points="57 48 ,92 48,104 58,43 58" fill="#B1D5E4" id="tec2"></polygon>
+                <!--<canvas id="lienzo" width="150" height="80">El navegador utilizado no soporta el elementos canvas</canvas>-->
+                <svg id="lienzo">
+                    <rect id="rec1" x="45" y="10" width="60" height="35" rx="5"></rect>
+                    <rect id="rec2" x="50" y="15" width="50" height="25" rx="5"></rect>
+                    <polygon id="pol1" points="55 50 ,95 50,115 69,30 69"></polygon>
+                    <polygon id="pol2" points="57 53 ,92 53,104 65,43 65"></polygon>
                 </svg>
                 <h3 class="textPos titulo-foot">PROGRAMACION<br>E<br>HISTORIA</h3>
             </div>
             <div>Sitio con fines educativos - Creado por M.Victoria Lopez</div>
         </footer>
+        <script src="./scriptI.js"></script>
     </body>
 </html>

@@ -42,6 +42,7 @@ footer{
     height: 80px;
     justify-content: space-between;
     padding: 0px 40px;
+    color: white;
 }
 
 header{
@@ -67,6 +68,11 @@ header{
 }
 
 /* ------------ Configuracion Logo ------------ */
+#lienzo{
+    width: 150px;
+    height: 80px;
+}
+
 rect#rec1, polygon#pol1{
     animation: animation_1 ease-in 4s;
     animation-iteration-count:1;
@@ -83,13 +89,13 @@ rect#rec2, polygon#pol2 {
     0% {
         transform: translate(0,-10px);
         opacity:0;}
-    15% {
+    20% {
         transform: translate(0,-10px);
         opacity:0;}
     30% {
         transform: translate(0,0);
         opacity:1;}
-    80% {
+    90% {
         transform: translate(0,0);
         opacity:1;}
     100% {
@@ -104,13 +110,16 @@ rect#rec2, polygon#pol2 {
     30% {
         transform: translate(0,-10px);
         opacity:0;}
-    60% {
+    40% {
+        transform: translate(0,0);
+        opacity:1;}
+    90% {
         transform: translate(0,0);
         opacity:1;}
     100% {
         transform:translate(0,0);
         opacity:1;}
-}  
+} 
 
 /* ------------ Configuracion Navegador ------------ */
 .menu-nav{
@@ -169,7 +178,7 @@ rect#rec2, polygon#pol2 {
 }
 
 .boton-ver{
-    padding: 10px ;
+    padding: 10px;
     border-radius: 10px;
     color:rgb(240,245,228);
     background-color: rgb(66,126,128);
@@ -190,13 +199,17 @@ rect#rec2, polygon#pol2 {
     display: flex;
     justify-content: space-between;
     width:300px;
-    height: 60px;
+    height: 80px;
 }
 
 .titulo-foot{
     font-size: 14px;
+    margin-top: 18px;
 }
-
+#logo{
+    height: 80%;
+    margin-top: 8px;
+}
 /* ------------ Configuracion Pag Historia ------------ */
 .main-hist{
     flex-direction: column;
