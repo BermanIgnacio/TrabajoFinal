@@ -138,8 +138,7 @@ rect#rec2, polygon#pol2 {
     padding: 10px;
     text-decoration: none;
     background-color: rgb(240,245,228);
-    color:rgb(21,68,84) ;
-    font-weight: 300;
+    color:rgb(54, 100, 116) ;
 }
 
 .conf-menu:active{
