@@ -68,7 +68,7 @@ header{
 }
 
 /* ------------ Configuracion Logo ------------ */
-#lienzo{
+.lienzo{
     width: 150px;
     height: 80px;
 }
@@ -138,7 +138,7 @@ rect#rec2, polygon#pol2 {
     padding: 10px;
     text-decoration: none;
     background-color: rgb(240,245,228);
-    color:rgb(54, 100, 116) ;
+    color:rgb(21, 68, 84);
 }
 
 .conf-menu:active{
@@ -151,10 +151,9 @@ rect#rec2, polygon#pol2 {
 
 /* ------------ Configuracion Pag Index ------------ */
 .main-tarjeta{
-    margin: 100px 0px;
-    width: 100%;
     display: flex;
     justify-content: space-evenly;
+    margin: 100px 0px;
     gap: 20px;
 }
 
@@ -203,11 +202,12 @@ rect#rec2, polygon#pol2 {
 
 .titulo-foot{
     font-size: 14px;
-    margin-top: 18px;
+    margin: auto 0;
 }
+
 #logo{
-    height: 80%;
-    margin-top: 8px;
+    height: 70%;
+    margin: auto 0;
 }
 /* ------------ Configuracion Pag Historia ------------ */
 .main-hist{
@@ -216,7 +216,7 @@ rect#rec2, polygon#pol2 {
 }
 
 .text-hist{    
-    padding:80px 50px;
+    padding:60px 50px;
     gap: 20px;
     justify-content: space-around;
 }
@@ -227,7 +227,7 @@ rect#rec2, polygon#pol2 {
 
 /* ------------ video ------------ */
 .contenedorVideo{
-    padding: 100px 0px;
+    padding-bottom: 100px;
 }
 
 .barra{
@@ -250,7 +250,7 @@ rect#rec2, polygon#pol2 {
 }
 
 #play,#pause{
-   width: 80px;
+   width: 75px;
 }
 
 .botonVideo:active{
@@ -261,6 +261,7 @@ rect#rec2, polygon#pol2 {
 #tiempo{
     padding-right: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 /* ------------ Configuracion Pag Juego ------------ */
@@ -272,12 +273,14 @@ rect#rec2, polygon#pol2 {
     display: flex;
     flex-direction: row;
 }
+.img-size{
+    height: 400px;
+    width: 275px;
+}
 
 #puzzle1,#puzzle2,#puzzle3{
     display: inline-block;
     text-align: center;
-    height: 400px;
-    width: 275px;
     background-color: grey;
     border: 2px solid black;
 }
@@ -296,4 +299,8 @@ rect#rec2, polygon#pol2 {
     display: flex;
     margin: auto;
     padding: 10px 100px;
+}
+
+.espacioReinicio{
+    margin: 50px auto;
 }

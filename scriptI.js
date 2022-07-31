@@ -1,8 +1,3 @@
-let ele= document.querySelector("canvas");
-
-let dib = ele.getContext("2d");
-
-
 function pantallaExterior(y,o) {
     dib.beginPath();
     dib.strokeStyle = `rgba(63, 103, 151,${o})`;
@@ -63,42 +58,40 @@ function tecladoInterior(y,o) {
     dib.fill();
 }
 
-var frameI=1;
-var yInt=0;
-var yExt=0;
-var frame=1;
-var frames=25;
-var op=0;
 function animacionLogoExterior() {
     dib.clearRect(0,0,150,80);
     yExt +=(10/(frames));
-    //dib.globalAlpha += (1/(frames));
-    op += (1/(frames));
-    pantallaExterior(yExt,op);
-    tecladoExterior(yExt,op);
+    alpha += (1/(frames));
+    pantallaExterior(yExt,alpha);
+    tecladoExterior(yExt,alpha);
     if (frame!=frames) {
         frame++;
         window.requestAnimationFrame(animacionLogoExterior);
     }
 }
+
 function animacionLogoInterior() {
     dib.clearRect(0,0,150,80);
     yInt +=(15/(frames));
-    op = frameI*(1/(frames));
+    alpha = frameI*(1/(frames));
     pantallaExterior(10,1);
     tecladoExterior(10,1);
-    pantallaInterior(yInt,op);
-    tecladoInterior(yInt,op); 
+    pantallaInterior(yInt,alpha);
+    tecladoInterior(yInt,alpha); 
     if (frameI!=frames) {
         frameI++;
         window.requestAnimationFrame(animacionLogoInterior);
     }
-    else{
-        console.log(yInt);
-        console.log(frameI);
-        dib.globalAlpha = 1;
-    }
 }
-window.setTimeout(animacionLogoExterior, 800);
 
+let ele= document.querySelector("canvas");
+let dib = ele.getContext("2d");
+
+let yInt=0;
+let frameI=1;
+let yExt=0;
+let frame=1;
+const frames=25;
+let alpha=0;
+window.setTimeout(animacionLogoExterior, 800);
 window.setTimeout(animacionLogoInterior, 1200);
